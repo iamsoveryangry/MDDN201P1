@@ -1,0 +1,62 @@
+<!DOCTYPE>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+		@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap');
+	</style>
+</head>
+<body>
+
+<div class="header">
+  <h3>Internet Infrastructures in Wellington</h3>
+</div>
+
+<div id="navbar">
+  <a class="active" href="freewifi.html" target="_self">Free Wifi</a>
+  <a href="mobilevehicles.html" target=_self>Mobile Vehicles</a>
+  <a href="livestreet.html" target=_self>Live on Street</a>
+</div>
+	<div class="title">
+  		<h3>Free Wifi in Wellington</h3>
+  		<hr class = "wifi">
+  		<h5>Free Wifi offered by City Council and Spark Mobile.</h5>
+	</div>
+
+<div class="container" align = "center">
+    <img src="img/free1.png">
+    <img src="img/free2.png">
+    <div class="text" align = "right">
+        <a href= "http://cbdfree.co.nz/index.php" target=_blank>CBD Free</a>
+        <p>CBD Free is the free wifi throughout Wellington city.
+        <br>It is straight forward to use and has a pretty good range of service.</p>
+    </div>
+</div>
+
+<div class="container" align = "center">
+    <img class = "vertical" src="img/free3.jpg">
+    <div class="text" align = "left">
+        <a href = "https://www.spark.co.nz/getmore/free-wifi/" target =_blank>Spark Free Wifi</a>
+        <p>If your mobille phone is with Spark, you can use up to 1GB free data for free near these phone booths in the City.</p>
+    </div>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

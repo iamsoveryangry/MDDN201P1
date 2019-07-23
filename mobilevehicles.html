@@ -1,0 +1,61 @@
+<!DOCTYPE>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap');
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h3>Internet Infrastructures in Wellington</h3>
+</div>
+
+<div id="navbar">
+  <a href="freewifi.html" target="_self">Free Wifi</a>
+  <a class="active" href="mobilevehicles.html" target=_self>Mobile Vehicles</a>
+  <a href="livestreet.html" target=_self>Live on Street</a>
+</div>
+  <div class="title">
+      <h3>Mobile Vehicles</h3>
+      <hr class = "mobile">
+      <h5>Mobile rental vehicles in Wellington city.</h5>
+  </div>
+
+<div class="container" align = "center">
+    <img class = "vertical" src="img/mobile1.jpg">
+    <img class = "vertical" src="img/mobile3.jpg">
+    <div class="text" align = "left">
+        <a href = "https://flamingoscooters.com" target=_blank>Mobile Scooters</a>
+        <p>There are currently 2 mobile scooters in Wellington, Jump by Uber and Flamingo. In order to find and rent these electric scooters, you need to install their apps on your phone and find them on the map. Once you've found them, you can unlock the vehicle via app by scanning the QR code. They charge for the vehicle in-app as well. Linked to Flamingo website.</p>
+    </div>
+</div>
+
+<div class="container" align = "center">
+    <img class = "vertical" src="img/mobile2.jpg">
+    <div class="text" align = "right">
+        <a href = "https://www.spark.co.nz/getmore/free-wifi/" target =_blank>Onzo Bike</a>
+        <p>These bicyles works same as the scooters.</p>
+    </div>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

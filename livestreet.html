@@ -1,0 +1,68 @@
+<!DOCTYPE>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap');
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h3>Internet Infrastructures in Wellington</h3>
+</div>
+
+<div id="navbar">
+  <a href="freewifi.html" target="_self">Free Wifi</a>
+  <a href="mobilevehicles.html" target=_self>Mobile Vehicles</a>
+  <a class="active" href="livestreet.html" target=_self>Live on Street</a>
+</div>
+  <div class="title">
+      <h3>Live on Street</h3>
+      <hr class = "live">
+      <h5>These are some examples of the live transportation status in Wellington.</h5>
+  </div>
+
+<div class="container" align = "center">
+    <img class = "vertical" src="img/trans1.jpg">
+    <div class="text" align = "right">
+        <h3>Time to Destination</h3>
+        <p>This is the sign you can find near the enterance of the highway. It tells you approximately how long it would take from Wellington to nearby suburb, updated time to time.</p>
+    </div>
+</div>
+
+<div class="container" align = "center">
+    <img class = "vertical" src="img/trans2.jpg">
+    <div class="text" align = "left">
+        <h3>Speed Meter</h3>
+        <p>This is a speed meter on Manners Street telling you how fast you are going on the street.</p>
+    </div>
+</div>
+
+<div class="container" align = "center">
+    <img class = "vertical" src="img/trans3.jpg">
+    <div class="text" align = "right">
+        <h3>Bus Sign</h3>
+        <p>These bus signs around the city gets updated frequently telling passengers how long it would take for the buses to arrive.</p>
+    </div>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
