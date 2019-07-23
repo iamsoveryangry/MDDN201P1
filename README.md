@@ -1,3 +1,4 @@
-# Example Template for SPA1
+# MDDN201 P1
 
-These are some basic elements to help you out with SPA1. Hit the clone or download button to get it as a zip. 
+I have added the external hyperlinks on "free wifi" and "mobile vehicles" pages.
+Texts with hyperlink change colors to white when hovered.
